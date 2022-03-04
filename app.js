@@ -7,8 +7,8 @@ const PORT = process.env.PORT || 3000;
 
 const app = express();
 
-mongoose.connect(
-   'mongodb+srv://zuhaib:password123!@phase1.l27ib.mongodb.net/todoDB?retryWrites=true&w=majority'
+mongoose.connect(uri
+   // 'mongodb+srv://zuhaib:password123!@phase1.l27ib.mongodb.net/todoDB?retryWrites=true&w=majority'
    // {
    //    useNewUrlParser: true,
    //    useUnifiedTopology: true,
