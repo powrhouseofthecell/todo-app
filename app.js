@@ -4,6 +4,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 
 const PORT = process.env.PORT || 3000;
+const uri = process.env.URI
 
 const app = express();
 
@@ -23,5 +24,3 @@ app.use(require('./routes/index'));
 app.use(require('./routes/todo'));
 
 app.listen(PORT, () => console.log('Server started listening on port: 3000'));
-
-// zuhaib/password123!
