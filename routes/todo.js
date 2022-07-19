@@ -1,6 +1,3 @@
-
-// resom58275@musezoo.com
-// https://instagram-uk.herokuapp.com/
 const router = require('express').Router();
 const Todo = require('../models/Todo');
 
@@ -17,7 +14,7 @@ router
             console.log('Successfully added todo!');
             res.redirect('/');
          })
-         .catch(err => console.log(err));
+         .catch((err) => console.log(err));
    })
 
    .get('/delete/todo/:_id', (req, res) => {
@@ -27,7 +24,7 @@ router
             console.log('Deleted Todo Successfully!');
             res.redirect('/');
          })
-         .catch(err => console.log(err));
+         .catch((err) => console.log(err));
    });
 
 module.exports = router;
