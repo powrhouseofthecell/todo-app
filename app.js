@@ -4,11 +4,12 @@ const express = require('express');
 const mongoose = require('mongoose');
 
 const PORT = process.env.PORT || 3000;
+const uri = process.env.uri
 
 const app = express();
 
-mongoose.connect(
-   'mongodb+srv://zuhaib:password123!@phase1.l27ib.mongodb.net/todoDB?retryWrites=true&w=majority'
+mongoose.connect(uri
+   // 'mongodb+srv://zuhaib:password123!@phase1.l27ib.mongodb.net/todoDB?retryWrites=true&w=majority'
    // {
    //    useNewUrlParser: true,
    //    useUnifiedTopology: true,
@@ -23,5 +24,3 @@ app.use(require('./routes/index'));
 app.use(require('./routes/todo'));
 
 app.listen(PORT, () => console.log('Server started listening on port: 3000'));
-
-// zuhaib/password123!
